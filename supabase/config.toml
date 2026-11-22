@@ -1,0 +1,23 @@
+# 최소 설정. 전체 옵션은 `supabase init` 으로 생성되는 기본 파일을 참고하세요.
+project_id = "cornote"
+
+[api]
+port = 54321
+
+[db]
+port = 54322
+major_version = 17
+
+[auth]
+site_url = "http://localhost:5173"
+additional_redirect_urls = ["http://localhost:5173", "http://localhost:4173"]
+
+[auth.email]
+enable_signup = true
+enable_confirmations = false
+
+[functions.generate-questions]
+verify_jwt = true
+
+[functions.grade-answer]
+verify_jwt = true
